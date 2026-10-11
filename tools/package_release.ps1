@@ -97,7 +97,7 @@ if ((Get-Item (Join-Path $BiosDestination "openbios.bin")).Length -ne 524288) {
 $LicensesDestination = Join-Path $Stage "licenses"
 Copy-Item -LiteralPath (Join-Path $Root "psxrecomp\runtime\licenses") `
     -Destination $LicensesDestination -Recurse
-Copy-Item -LiteralPath (Join-Path $Root "psxrecomp\\LICENSE") `
+Copy-Item -LiteralPath (Join-Path $Root "psxrecomp\LICENSE") `
     -Destination (Join-Path $LicensesDestination "PSXRecomp-LICENSE.txt")
 if (@(Get-ChildItem -LiteralPath $LicensesDestination -File).Count -lt 1) {
     throw "No third-party notices were staged"
