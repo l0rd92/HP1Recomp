@@ -9,12 +9,21 @@ class ReleasePackageContractTests(unittest.TestCase):
     def test_required_player_files_exist(self):
         for relative in (
             "VERSION",
+            "LICENSE",
+            "THIRD_PARTY_NOTICES.md",
             "RELEASE_NOTES.md",
             "packaging/release/START_HERE.txt",
             "packaging/release/input.ini",
             "tools/package_release.ps1",
         ):
             self.assertTrue((ROOT / relative).is_file(), relative)
+
+    def test_release_packager_includes_license_notices(self):
+        script = (ROOT / "tools/package_release.ps1").read_text(encoding="utf-8")
+        self.assertIn('Join-Path $Root "LICENSE"', script)
+        self.assertIn('Join-Path $Root "THIRD_PARTY_NOTICES.md"', script)
+        self.assertIn('"PSXRecomp-LICENSE.txt"', script)
+        self.assertIn('Join-Path $Root "psxrecomp\\LICENSE"', script)
 
     def test_packager_guards_private_and_retail_state(self):
         script = (ROOT / "tools/package_release.ps1").read_text(encoding="utf-8")

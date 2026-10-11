@@ -80,6 +80,8 @@ Copy-Item -LiteralPath $BuiltExe -Destination (Join-Path $Stage "HP1Recomp.exe")
 Copy-Item -LiteralPath (Join-Path $Root "game.toml") -Destination $Stage
 Copy-Item -LiteralPath (Join-Path $Root "README.md") -Destination $Stage
 Copy-Item -LiteralPath (Join-Path $Root "RELEASE_NOTES.md") -Destination $Stage
+Copy-Item -LiteralPath (Join-Path $Root "LICENSE") -Destination $Stage
+Copy-Item -LiteralPath (Join-Path $Root "THIRD_PARTY_NOTICES.md") -Destination $Stage
 Copy-Item -LiteralPath (Join-Path $Root "packaging\release\START_HERE.txt") -Destination $Stage
 Copy-Item -LiteralPath (Join-Path $Root "packaging\release\input.ini") -Destination $Stage
 
@@ -95,6 +97,8 @@ if ((Get-Item (Join-Path $BiosDestination "openbios.bin")).Length -ne 524288) {
 $LicensesDestination = Join-Path $Stage "licenses"
 Copy-Item -LiteralPath (Join-Path $Root "psxrecomp\runtime\licenses") `
     -Destination $LicensesDestination -Recurse
+Copy-Item -LiteralPath (Join-Path $Root "psxrecomp\\LICENSE") `
+    -Destination (Join-Path $LicensesDestination "PSXRecomp-LICENSE.txt")
 if (@(Get-ChildItem -LiteralPath $LicensesDestination -File).Count -lt 1) {
     throw "No third-party notices were staged"
 }
