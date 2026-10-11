@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="docs/assets/hp1recomp-logo.svg" alt="HP1Recomp" width="190">
+  <img src="docs/assets/hp1recomp-logo.png" alt="HP1 Recomp" width="640">
 </p>
-
-<h1 align="center">HP1Recomp</h1>
 
 <p align="center">
   <strong>Native recompilation of <em>Harry Potter and the Sorcerer's Stone</em> for Windows.</strong>
