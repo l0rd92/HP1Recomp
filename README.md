@@ -4,6 +4,13 @@
 
 HP1Recomp is a native Windows recompilation project for **Harry Potter and the Sorcerer's Stone** on PlayStation.
 
+<p align="center">
+  <img alt="Windows x64" src="https://img.shields.io/badge/Windows-x64-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
+  <img alt="PSXRecomp" src="https://img.shields.io/badge/Framework-PSXRecomp-C79A2B?style=for-the-badge">
+  <img alt="SLUS-01415" src="https://img.shields.io/badge/Reference-SLUS--01415-2EA44F?style=for-the-badge">
+  <img alt="Phase 7" src="https://img.shields.io/badge/Phase%207-Release%20Hardening-6F42C1?style=for-the-badge">
+</p>
+
 | | |
 |---|---|
 | **Original game** | Harry Potter and the Sorcerer's Stone (PS1) |
