@@ -1,0 +1,74 @@
+# Retail game data / disc images
+*.bin
+*.cue
+*.chd
+*.iso
+*.img
+*.ccd
+*.sub
+*.mdf
+*.mds
+
+# Harry Potter retail/extracted files
+SLUS_014.15
+SLUS_*
+SLES_*
+SCES_*
+SCUS_*
+SLED_*
+POTTER.DAT
+POTTER.DIR
+
+# Extracted/local game directories
+local_game/
+game_data/
+disc/
+discs/
+retail/
+original/
+extracted/
+
+# Generated / build output
+generated/
+build/
+build-*/
+out/
+dist/
+release-stage/
+HP1Recomp-*-windows-x64.zip
+HP1Recomp-*-windows-x64.zip.sha256
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Tool/runtime local caches
+.cache/
+/toolchain/
+.settings/
+saves/
+.sentry-native/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# Logs / traces / dumps
+*.log
+*.trace
+*.dmp
+*.dump
+psx_crash.txt
+psx_freeze_dump_*.json
+psx_freeze_heartbeat.json
+psx_last_run_report.json
+
+# Local environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
