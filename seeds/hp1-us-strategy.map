@@ -1,0 +1,19 @@
+# Confirmed Strategy handler symbols for HP1 USA US.GAM.
+# Evidence and opcode mapping are documented in RESEARCH.md.
+00039B0C stTurnToX
+00039C14 stTurnToY
+00039FF4 stWPTurnToX
+0003A0B8 stWPTurnToY
+0003A3A4 stTurnToPlayerY
+0003A504 stTurnFromPlayerY
+0003ABA0 stWPNearest
+0003E878 stGlobal
+0003E8EC stLocal
+0003E7A8 stNumber
+00055D3C stAdd
+00055D64 stSub
+00055DD4 stNotEqual
+00055DFC stMul
+00055E54 stInt
+00055E74 stOr
+00055ECC stBitwiseAnd

@@ -1,0 +1,12 @@
+{
+  "psxrecomp": {
+    "repository": "https://github.com/l0rd92/psxrecomp.git",
+    "commit": "84ab7fe0cc34109d4ebc391ef173af829e8b21f2",
+    "upstream_repository": "https://github.com/RetroPortingToolKit/psxrecomp.git",
+    "upstream_base_commit": "1ec24e9d4915770a313e4fc19fad5430f55b00a2"
+  },
+  "ps1_recomp": {
+    "repository": "https://github.com/PS1Recomp/ps1-recomp.git",
+    "commit": "ab4f0e01e6699c741bbc3d1ee73022be2803ff69"
+  }
+}

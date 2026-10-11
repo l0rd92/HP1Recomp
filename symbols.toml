@@ -1,0 +1,16 @@
+# Progressive HP1 symbol map. Keep names evidence-based; emit remains disabled
+# until an entry is safe to own in generated native code.
+
+[[func]]
+pc = 0x00103DDC
+name = "BootEntry"
+emit = false
+status = "confirmed"
+note = "PS-X EXE entry PC from the canonical SLUS_014.15 header"
+
+[[func]]
+pc = 0x0010014C
+name = "LoadSecondaryExecutable"
+emit = false
+status = "confirmed"
+note = "Loads cdrom:\\US.GAM;1 and invokes BIOS Exec; static and dynamic evidence"

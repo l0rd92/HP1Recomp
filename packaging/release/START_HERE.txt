@@ -1,0 +1,23 @@
+HP1Recomp v0.1.0-alpha
+
+This package does not include the Harry Potter game, a retail PlayStation BIOS,
+save data, or copyrighted game assets.
+
+First launch:
+1. Run HP1Recomp.exe.
+2. Select your legally obtained Harry Potter and the Sorcerer's Stone (USA,
+   En/Fr/Es, SLUS-01415) disc image when Windows asks for it.
+3. Pick the .cue file when your copy has a .cue and one or more .bin files.
+4. OpenBIOS is included and selected automatically. A retail BIOS is optional.
+
+The selected disc is remembered in disc.cfg. Settings and controller bindings
+are stored beside the executable. Memory cards are stored in the saves folder.
+
+Controller notes:
+- DualSense works over Bluetooth through SDL.
+- D-pad and left stick both drive the original PS1 digital directions.
+- SDL names the face buttons a/b/x/y; the supplied mapping translates them to
+  Cross/Circle/Square/Triangle.
+
+Known limitations are listed in RELEASE_NOTES.md. Keep backups of important
+memory cards while using an alpha build.
